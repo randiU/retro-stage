@@ -1,0 +1,76 @@
+.skip-link {
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  font-size: 1.125rem;
+  overflow: hidden;
+
+  &:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 0.5em;
+  }
+}
+
+[class^="link"] {
+  min-height: 3em;
+  color: #fff;
+  border: solid 5px $color-primary;
+}
+
+[class^="link"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75em;
+  transform: translate(0, 0);
+  transition: 180ms all ease-in-out;
+  font-size: 1.125rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    transform: translate(-0.15em, -0.15em);
+    box-shadow: 0.3em 0.3em var(--color-secondary);
+  }
+
+  &:focus {
+    outline-color: transparent;
+    outline-style: solid;
+  }
+}
+
+.profile .container > a {
+  color: white;
+}
+
+// stylelint-disable-next-line no-descending-specificity
+.page-footer [class^="link"] {
+}
+
+
+.link-allstyles {
+}
+
+.link-github {
+  svg {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+    fill: currentColor;
+  }
+  
+}
+
+.link-guidelines, .link-github, .link-downloadcss, .link-codepen, .link-downloadhtml {
+  font-family: $primary-font;
+}

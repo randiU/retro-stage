@@ -1,0 +1,29 @@
+#about {
+    section {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            text-decoration: none;
+            li {
+                padding: 0.5rem 1rem;
+                margin: 1rem;
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+
+#about .container blockquote {
+    border: 5px solid $color-secondary;
+    padding: 1rem;
+    box-shadow: 0.5em 0.5em white;
+    margin: 2rem 0 3rem 0;
+        strong {
+            display: block;
+            color: $color-primary;
+            font-family: $primary-font;
+            margin-bottom: 1rem;
+        }
+}

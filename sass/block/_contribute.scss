@@ -1,0 +1,15 @@
+#contribute {
+    section {
+        ol {
+            list-style-position: inside;
+        }
+    }
+    footer {
+        div {
+            a {
+                grid-column: 3/-3;
+                margin: 1rem;
+            }
+        }
+    }
+}
