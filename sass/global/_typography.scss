@@ -16,20 +16,30 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  font-size: clamp(2rem, 4vw, var(--font-size-h2));
   text-align: center;
 }
 
 header h2 {
   font-family: $secondary-font;
   color: $color-secondary;
+  font-size: 1em;
+
+  @media screen and (min-width: $desktop-size) {
+    font-size: 2em;
+  }
 }
 
 #main h2 {
   text-align: left;
   align-self: center;
-  padding: 0.25em 0.5em;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop-size) {
+    font-size: 2em;
+  }
 }
+
+
 
 h3 {
   font-size: var(--font-size-h3);
