@@ -351,8 +351,20 @@ nav ul li a {
   }
 }
 
+#contribute {
+  margin-bottom: 50px;
+}
 #contribute section ol {
   list-style-position: inside;
+  list-style-type: none;
+  counter-reset: num;
+}
+#contribute section ol li:before {
+  content: counter(num) " .";
+  counter-increment: num;
+  font-family: "Bungee", sans-serif;
+  color: #37E9E9;
+  font-size: 1.3em;
 }
 #contribute footer div a {
   grid-column: 3/-3;
@@ -361,6 +373,10 @@ nav ul li a {
 
 #contribute .container p {
   margin-bottom: 50px;
+}
+
+#files {
+  margin-top: 50px;
 }
 
 .features {

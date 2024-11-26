@@ -1,7 +1,18 @@
 #contribute {
+    margin-bottom: 50px;
     section {
         ol {
             list-style-position: inside;
+            list-style-type: none;
+            counter-reset: num;
+
+            li:before {
+                content: counter(num) " .";
+                counter-increment: num;
+                font-family: $primary-font;
+                color: $color-secondary;
+                font-size: 1.3em;
+            }
         }
     }
     footer {
