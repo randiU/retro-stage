@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --color-primary: #F981F5;
@@ -377,6 +378,24 @@ nav ul li a {
 
 #files {
   margin-top: 50px;
+}
+#files .container a {
+  grid-column: 3/-3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#files .container a ::after {
+  content: "&#8595;";
+}
+@media screen and (min-width: 1200px) {
+  #files .container a {
+    grid-column: 5/-5;
+  }
+}
+
+#files .container a::after {
+  content: "↓";
+  margin-left: 5px;
 }
 
 .features {

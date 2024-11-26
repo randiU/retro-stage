@@ -1,3 +1,22 @@
 #files {
     margin-top: 50px;
+
+    .container a {
+        grid-column: 3/-3;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        ::after {
+            content: "&#8595;";
+        }
+
+        @media screen and (min-width: $desktop-size) {
+            grid-column: 5/-5;
+        }
+    }
+}
+
+#files .container a::after {
+    content: "\2193";
+    margin-left: 5px;
 }
