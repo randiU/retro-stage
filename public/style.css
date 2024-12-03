@@ -435,6 +435,16 @@ nav ul li a {
   margin-bottom: 1rem;
 }
 
+.profile-title span:nth-child(2) {
+  visibility: hidden;
+}
+
+.profile-title span:nth-child(2)::before {
+  content: "Retro Stage";
+  font-family: "IBM Plex Mono", monospace;
+  visibility: visible;
+}
+
 .page-footer div ul {
   list-style: none;
   display: flex;

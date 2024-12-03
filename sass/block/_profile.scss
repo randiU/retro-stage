@@ -25,3 +25,13 @@
             margin-bottom: 1rem;
         }
 }
+
+.profile-title span:nth-child(2) {
+    visibility: hidden;  
+}
+
+.profile-title span:nth-child(2)::before {
+    content: "Retro Stage";
+    font-family: $secondary-font;
+    visibility: visible;
+}
