@@ -19,19 +19,77 @@
     padding: 1rem;
     box-shadow: 0.5em 0.5em white;
     margin: 2rem 0 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
         h4 {
             color: $color-primary;
             font-family: $primary-font;
             margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        ul {
+            width: 100%;
         }
 }
 
-.profile-title span:nth-child(2) {
-    visibility: hidden;  
+.profile-title span:nth-child(2), .profile-author span:nth-child(2), .profile-twitter span:nth-child(2), .profile-website span:nth-child(2) {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    width: 70%;
 }
 
-.profile-title span:nth-child(2)::before {
-    content: "Retro Stage";
+@mixin list-content-update {
     font-family: $secondary-font;
     visibility: visible;
+    position:absolute;
+    left: 0;
+    width: 150%;
 }
+
+.profile-title span:nth-child(2)::after {
+    content: "Retro Stage";
+    @include list-content-update();
+
+}
+
+.profile-author span:nth-child(2)::after {
+    content: "Randi Umphrey";
+    @include list-content-update();
+}
+
+.profile-twitter span:nth-child(2)::after {
+    content: "N/A";
+    @include list-content-update();
+}
+
+.profile-website span:nth-child(2)::after {
+    content: "https://github.com/randiU/retro-stage";
+    font-family: $secondary-font;
+    visibility: visible;
+    position:absolute;
+    left: 0;
+}
+
+.profile .container a:last-child {
+    font-family: $secondary-font;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.profile .container:last-child::after {
+    content: " \2192";
+    font-size: 2rem;
+    color: $color-primary;
+    margin-top: 18px;
+}
+
+
+.profile-title, .profile-author, .profile-twitter {
+    margin-bottom: 5px;
+}
+
+
+
