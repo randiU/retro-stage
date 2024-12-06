@@ -413,6 +413,23 @@ nav ul li a {
   padding: 2rem;
   border: 5px solid #37E9E9;
   margin: 1rem;
+  text-align: center;
+}
+.features a {
+  text-decoration: none;
+  color: #F981F5;
+  display: block;
+}
+
+.features span:nth-child(2) {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+a.link-allstyles {
+  border: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #styles div a {
@@ -476,7 +493,7 @@ nav ul li a {
 }
 
 .profile-website span:nth-child(2)::after {
-  content: "https://github.com/randiU/retro-stage";
+  content: "github.com/randiU/retro-stage";
   font-family: "IBM Plex Mono", monospace;
   visibility: visible;
   position: absolute;
@@ -515,6 +532,12 @@ nav ul li a {
 }
 .page-footer div ul li {
   margin: 1rem;
+}
+
+.page-footer::before {
+  text-decoration: #37E9E9 wavy underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
 }
 
 .skip-link {

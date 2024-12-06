@@ -10,5 +10,23 @@
         padding: 2rem;
         border: 5px solid $color-secondary;
         margin: 1rem;
+        text-align: center;
     }
+
+    a {
+        text-decoration: none;
+        color: $color-primary;
+        display: block;
+    }
+}
+
+.features span:nth-child(2){
+    font-family: $secondary-font;
+}
+
+a.link-allstyles {
+    border: none;
+    font-family: $secondary-font;
+    font-weight: bold;
+    text-decoration: underline;
 }

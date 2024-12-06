@@ -1,4 +1,5 @@
 .page-footer {
+
     div {
         ul {
             list-style: none;
@@ -15,4 +16,10 @@
             }
         }
     }
+}
+
+.page-footer::before {
+    text-decoration: $color-secondary wavy underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
 }
