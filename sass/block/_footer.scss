@@ -18,6 +18,11 @@
     }
 }
 
+.page-footer .container p:nth-child(1){
+    text-align: center;
+    margin-top: 30px;
+}
+
 .page-footer::before {
     margin-top: -50px;
     display: inline-block;
@@ -38,5 +43,19 @@
      calc(50% - 2*var(--s)) calc(50% - var(--s)/2 - var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x,
     radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)),var(--_g)) 
      50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
+}
+
+a.link-twittercontact, .page-footer a.link-github, a.link-rss, a.link-support {
+    border: none;
+    color: $color-primary;
+}
+
+.page-footer a.link-github svg {
+    fill: $color-primary;
+}
+
+a.link-twittercontact:hover {
+    transform: none;
+    box-shadow: none;
 }
 

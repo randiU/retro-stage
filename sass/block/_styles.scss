@@ -34,10 +34,9 @@ a.link-allstyles {
     margin-bottom: 40px;
 }
 
-.link-allstyles:hover {
-    transform: none!important;
-    box-shadow: none!important;
-    pointer-events: none;
+a.link-allstyles:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 

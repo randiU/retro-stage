@@ -435,10 +435,9 @@ a.link-allstyles {
   margin-bottom: 40px;
 }
 
-.link-allstyles:hover {
-  transform: none !important;
-  box-shadow: none !important;
-  pointer-events: none;
+a.link-allstyles:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 #styles h2 {
@@ -552,6 +551,11 @@ a.link-allstyles {
   margin: 1rem;
 }
 
+.page-footer .container p:nth-child(1) {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .page-footer::before {
   margin-top: -50px;
   display: inline-block;
@@ -570,6 +574,20 @@ a.link-allstyles {
   width: 240%;
   --_g: #0000 calc(99% - var(--b)), #000 calc(101% - var(--b)) 99%, #0000 101%;
   mask: radial-gradient(var(--R) at left 50% bottom calc(-1*var(--m)*var(--s)), var(--_g)) calc(50% - 2*var(--s)) calc(50% - var(--s)/2 - var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x, radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)), var(--_g)) 50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
+}
+
+a.link-twittercontact, .page-footer a.link-github, a.link-rss, a.link-support {
+  border: none;
+  color: #F981F5;
+}
+
+.page-footer a.link-github svg {
+  fill: #F981F5;
+}
+
+a.link-twittercontact:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .skip-link {
