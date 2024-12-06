@@ -29,4 +29,20 @@ a.link-allstyles {
     font-family: $secondary-font;
     font-weight: bold;
     text-decoration: underline;
+    margin-top: 30px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.link-allstyles:hover {
+    transform: none!important;
+    box-shadow: none!important;
+    pointer-events: none;
+}
+
+
+#styles h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 20px;
 }
